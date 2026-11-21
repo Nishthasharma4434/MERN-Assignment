@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8f7;
+    color: #263b50;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #123e4b;
+    color: white;
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h3 {
+    font-size: 16px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.navbar ul li a:hover {
+    color: #9bd5ce;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #dcefe8;
+    margin: 0;
+    padding: 35px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 250px;
+}
+
+.hero-content h4 {
+    color: #26777b;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    color: #243b53;
+}
+
+.hero-content p {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #167c83;
+    color: white;
+    padding: 7px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #105b63;
+}
+
+/* Profile Illustration */
+.profile {
+    width: 140px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.head {
+    width: 40px;
+    height: 55px;
+    background-color: #70aaa1;
+    border-radius: 50%;
+    margin-bottom: 3px;
+}
+
+.body {
+    width: 85px;
+    height: 100px;
+    background-color: #70aaa1;
+    border-radius: 50%;
+}
+
+/* Common Section Styling */
+.about,
+.skills,
+.education,
+.contact {
+    padding: 20px 30px 5px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #263f56;
+}
+
+section p {
+    font-size: 16px;
+    color: #526779;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+    .profile {
+        align-self: center;
+    }
+}
+:root {
+    --primary: #173f49;
+    --secondary: #245e50;
+    --light: #f4f7f5;
+    --text: #263b50;
+    --border: #d9e0dd;
+}
+
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: var(--text);
+    padding: 30px;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--primary);
+    padding: 15px;
+    text-align: right;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #f5d98b;
+}
+
+/* Topics section */
+.topics {
+    margin-bottom: 35px;
+    font-size: 15px;
+}
+
+/* Projects section */
+.projects {
+    margin: 30px 0;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.project-container {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    flex: 1;
+    min-width: 250px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+.project-card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+/* Mountain illustration */
+.mountain {
+    height: 120px;
+    background-color: #dce9dc;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.sun {
+    width: 55px;
+    height: 30px;
+    background-color: #f5dc8a;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 20%;
+}
+
+.hill {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+}
+
+.hill-one {
+    border-bottom: 80px solid #438b70;
+    left: -20px;
+}
+
+.hill-two {
+    border-bottom: 65px solid #174c4c;
+    right: -30px;
+}
+
+/* Contact section */
+.contact {
+    margin: 45px 0;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: var(--primary);
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.copyright {
+    font-weight: bold;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #f5dc8a;
+}
+
+/* Assignment note */
+.note {
+    background-color: #e4eeee;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+/* Last text */
+.last-text {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #68777c;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    nav {
+        text-align: center;
+    }
+}
